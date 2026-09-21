@@ -1,0 +1,18 @@
+# bluebubbles-channel config — template.
+# Copy to ~/hooks/bluebubbles-channel.conf (or let install/setup.sh write it).
+# NEVER commit the real file: it holds the server password.
+# File mode must be 600.
+
+# BlueBubbles server base URL — tailnet address ONLY, never public.
+# Example: http://100.64.1.2:1234
+BB_URL="http://<mac-tailnet-ip>:1234"
+
+# BlueBubbles server password (the API key), set in the app: Settings → Server.
+BB_PASSWORD="<server-password>"
+
+# Sender handles allowed to wake the agent, comma-separated.
+# Must match handle.address EXACTLY as the server reports it.
+BB_ALLOWLIST="+15551234567"
+
+# Group chat GUIDs allowed to wake the agent, comma-separated (optional).
+BB_GROUP_GUIDS=""
